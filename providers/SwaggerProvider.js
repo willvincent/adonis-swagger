@@ -21,6 +21,7 @@ class SwaggerProvider extends ServiceProvider {
               version: Config.get('swagger.version')
             },
             host: Config.get('swagger.host'),
+            schemes: Config.get('swagger.schemes'),
             basePath: Config.get('swagger.basePath'),
             securityDefinitions: {
               'ApiKey': {
