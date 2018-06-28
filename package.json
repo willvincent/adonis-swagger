@@ -18,7 +18,7 @@
   "author": "Ahmad Arif <ahmad.arif019@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "swagger-jsdoc": "git+https://git@github.com:willvincent/swagger-jsdoc.git"
+    "swagger-jsdoc": "https://github.com/willvincent/swagger-jsdoc.git"
   },
   "repository": {
     "type": "git",
