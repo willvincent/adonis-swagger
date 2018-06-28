@@ -20,6 +20,7 @@ class SwaggerProvider extends ServiceProvider {
               title: Config.get('swagger.title'),
               version: Config.get('swagger.version')
             },
+            host: Config.get('swagger.host'),
             basePath: Config.get('swagger.basePath'),
             securityDefinitions: {
               'ApiKey': {
