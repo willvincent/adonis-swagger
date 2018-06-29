@@ -23,24 +23,7 @@ class SwaggerProvider extends ServiceProvider {
             host: Config.get('swagger.host'),
             schemes: Config.get('swagger.schemes'),
             basePath: Config.get('swagger.basePath'),
-            securityDefinitions: {
-              'ApiKey': {
-                'type': 'apiKey',
-                'description': Config.get('swagger.securityDefinitions.ApiKey.description'),
-                'name': Config.get('swagger.securityDefinitions.ApiKey.name'),
-                'in': 'header'
-              },
-              'BasicAuth': {
-                'type': 'basic'
-              },
-              'OAuth2': {
-                'type': 'oauth2',
-                'flow': 'accessCode',
-                'authorizationUrl': Config.get('swagger.securityDefinitions.OAuth2.authorizationUrl'),
-                'tokenUrl': Config.get('swagger.securityDefinitions.OAuth2.tokenUrl'),
-                'scopes': Config.get('swagger.securityDefinitions.OAuth2.scopes')
-              }
-            }
+            securityDefinitions: Config.get('swagger.securityDefinitions'),
           },
           apis: apis
         }
