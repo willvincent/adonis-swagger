@@ -24,6 +24,7 @@ class SwaggerProvider extends ServiceProvider {
             schemes: Config.get('swagger.schemes'),
             basePath: Config.get('swagger.basePath'),
             securityDefinitions: Config.get('swagger.securityDefinitions'),
+            externalDocs: Config.get('swagger.externalDocs'),
           },
           apis: apis
         }
